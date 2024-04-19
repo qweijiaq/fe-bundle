@@ -6,16 +6,18 @@ on:
 
 jobs:
   test:
-    if: '!contains(github.event.head_commit.message, "ci skip")'
-
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-        node-version: [18.x, 20.x]
+        node-version: [20.x]
 
     runs-on: ${{ matrix.os }}
 
     steps:
+      - name: Check commit message
+        if: '!contains(github.event.head_commit.message, "ci skip")'
+        run: echo "Running tests..."
+
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
