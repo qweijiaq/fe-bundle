@@ -1,7 +1,7 @@
-import { defineConfig } from 'encode-bundle';
+import { defineConfig } from 'wj-fe-bundle';
 
 export default defineConfig({
-  name: 'encode-bundle',
+  name: 'wj-fe-bundle',
   target: 'node16.14',
   dts: {
     resolve: true,
