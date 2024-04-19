@@ -18,8 +18,11 @@ jobs:
         if: '!contains(github.event.head_commit.message, "ci skip")'
         run: echo "Running tests..."
 
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
 
@@ -36,7 +39,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install pnpm
-        run: corepack enable
+        run: npm install -g pnpm@6
 
       - name: Install deps
         run: pnpm install --frozen-lockfile=false
