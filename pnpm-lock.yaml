@@ -91,6 +91,9 @@ devDependencies:
   fs-extra:
     specifier: 10.0.0
     version: 10.0.0
+  husky:
+    specifier: ^9.0.11
+    version: 9.0.11
   postcss:
     specifier: 8.4.12
     version: 8.4.12
@@ -3682,6 +3685,12 @@ packages:
       read-pkg: 5.2.0
       run-node: 1.0.0
       slash: 3.0.0
+    dev: true
+
+  /husky@9.0.11:
+    resolution: {integrity: sha512-AB6lFlbwwyIqMdHYhwPe+kjOC3Oc5P3nThEoW/AaO2BX3vJDjWPFxYLxokUZOo6RNX20He3AaT8sESs9NJcmEw==}
+    engines: {node: '>=18'}
+    hasBin: true
     dev: true
 
   /iconv-lite@0.4.24:
