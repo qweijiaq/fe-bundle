@@ -69,7 +69,6 @@
     "tree-kill": "^1.2.2"
   },
   "devDependencies": {
-    "husky": "^8.0.3",
     "@rollup/plugin-json": "5.0.1",
     "@swc/core": "1.2.218",
     "@types/debug": "4.1.7",

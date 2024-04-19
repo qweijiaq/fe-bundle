@@ -1,6 +1,19 @@
 {
-  "cSpell.words": ["Pony Wei", "colorette", "consola", "hashbang", "joycon", "preinstall"],
-  "stylelint.validate": ["css", "scss", "less", "sass", "acss"],
+  "cSpell.words": [
+    "Pony Wei",
+    "colorette",
+    "consola",
+    "hashbang",
+    "joycon",
+    "preinstall"
+  ],
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "less",
+    "sass",
+    "acss"
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true,
@@ -50,5 +63,11 @@
     "**/Thumbs.db": true
   },
   "hide-files.files": [],
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"]
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ]
 }
