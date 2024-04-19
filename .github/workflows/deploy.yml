@@ -4,23 +4,22 @@ on:
   push:
     branches:
       - main
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v3 # 升级到最新版本
+        uses: actions/checkout@v2.3.1
 
       - name: Lock npm version
         uses: actions/setup-node@v3
         with:
-          node-version: '20.12.2'
+          node-version: 16.18.0
 
       - name: Install and Build
         run: |
-          export NODE_OPTIONS=--openssl-legacy-provider
           npm i -g pnpm
           pnpm run init
           pnpm run build:docs
