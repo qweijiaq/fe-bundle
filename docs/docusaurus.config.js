@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'GopherBundle',
   tagline: 'GopherBundle 构建工具，基于 esbuild 实现',
-  favicon: 'img/avatar.png',
+  favicon: 'img/logo.png',
 
   url: 'https://qweijiaq.github.io',
   baseUrl: '/fe-bundle/',
@@ -46,7 +46,7 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         logo: {
-          alt: 'wj-fe avatar',
+          alt: 'wj-fe logo',
           src: 'img/logo.png',
         },
         items: [
